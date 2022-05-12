@@ -9,5 +9,12 @@ describe("Unit Tests for ExplorerService Class", () => {
      
      expect(explorerMission).toStrictEqual(ExplorerService.filterByMission(explorers, "node"))
     });
+     test('Test 2: Unit Tests for ExplorerService Class', () => {
+  
+        const explorers = Reader.readJsonFile("explorers.json"); 
+        const explorerMission = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
+       
+        expect(explorerMission).toBe(10)
+       })     
 
 })
