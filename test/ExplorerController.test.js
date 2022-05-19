@@ -11,4 +11,12 @@ describe("Unit Tests for ExplorerController Class", () => {
         expect(explorerMission).toStrictEqual(ExplorerController.getExplorersByMission("node"));
     });
 
+    test("Test 2: Unit Tests for ExplorerController Class", () => {
+
+        const explorers = Reader.readJsonFile("explorers.json"); 
+        const explorerMission = ExplorerService.getExplorersUserNamesByMission(explorers, "node");
+     
+        expect(explorerMission).toStrictEqual(ExplorerController.getExplorersUsernamesByMission("node"));
+    });
+
 });
