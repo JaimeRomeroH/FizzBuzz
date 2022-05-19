@@ -8,4 +8,5 @@ const explorers = Reader.readJsonFile("explorers.json");
 //console.log(ExplorerService.getExplorersUserNamesByMission(explorers, "node"))
 //console.log(FizzbuzzService.applyValidationInExplorer(explorers, "node"));
 //console.log(ExplorerController.getExplorersByMission("node"));
-console.log(ExplorerController.getExplorersUsernamesByMission("node"));
+//console.log(ExplorerController.getExplorersUsernamesByMission("node"));
+console.log(ExplorerController.getExplorersAmonutByMission("node"));
