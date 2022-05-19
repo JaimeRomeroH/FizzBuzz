@@ -19,4 +19,12 @@ describe("Unit Tests for ExplorerController Class", () => {
         expect(explorerMission).toStrictEqual(ExplorerController.getExplorersUsernamesByMission("node"));
     });
 
+    test("Test 3: Unit Tests for ExplorerController Class", () => {
+
+        const explorers = Reader.readJsonFile("explorers.json"); 
+        const explorerMission = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+     
+        expect(explorerMission).toBe(ExplorerController.getExplorersAmonutByMission("node"));
+    });
+
 });
