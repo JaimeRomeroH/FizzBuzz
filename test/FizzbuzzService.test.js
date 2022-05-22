@@ -8,7 +8,12 @@ describe("Unit Tests for FizzbuzzService Class", () => {
         expect(explorerTrick).toStrictEqual(FizzbuzzService.applyValidationInExplorer(explorers, "node"));
     });
 
-    
+    test("Test 2: Unit Tests for FizzbuzzService Class", () => {
+
+        
+        const explorerTrick = FizzbuzzService.applyValidationInNumber(15);
+        expect(explorerTrick).toStrictEqual({"score":"15", "trick":"FIZZBUZZ"});
+    });
 
     
 });
