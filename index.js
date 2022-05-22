@@ -9,4 +9,5 @@ const explorers = Reader.readJsonFile("explorers.json");
 //console.log(FizzbuzzService.applyValidationInExplorer(explorers, "node"));
 //console.log(ExplorerController.getExplorersByMission("node"));
 //console.log(ExplorerController.getExplorersUsernamesByMission("node"));
-console.log(ExplorerController.getExplorersAmonutByMission("node"));
+//console.log(ExplorerController.getExplorersAmonutByMission("node"));
+console.log(FizzbuzzService.applyValidationInNumber(15));
